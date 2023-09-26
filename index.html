@@ -163,12 +163,19 @@
             <a href="img/ZackaryHughes_Resume.docx" download class="btn btn2">Download Resume</a>
           </div>
           <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="text" name="email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+            <form class="submit-to-google-sheet">
+              <label>
+                <input type="text" name="Name" placeholder="Your Name" required>
+              </label>
+              <label>
+                <input type="text" name="Email" placeholder="Your Email" required>
+              </label>
+              <label>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              </label>
+              <button type="submitgit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -181,5 +188,6 @@
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/switch.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
   </body>
 </html>
