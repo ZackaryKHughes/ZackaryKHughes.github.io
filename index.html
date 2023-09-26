@@ -27,13 +27,15 @@
       <div class="container">
         <nav>
           <img src="" class="logo">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Full Stack Web Developer</p>
@@ -158,22 +160,26 @@
               <a href="https://twitter.com/zhughes1103"><i class="fa-brands fa-twitter-square"></i></a>
               <a href="https://www.instagram.com/zackhughes11/"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="" class="btn btn2">Download CV</a>
+            <a href="img/ZackaryHughes_Resume.docx" download class="btn btn2">Download Resume</a>
           </div>
           <div class="contact-right">
             <form>
               <input type="text" name="Name" placeholder="Your Name" required>
               <input type="text" name="email" placeholder="Your Email" required>
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p><i class="fa-solid fa-heart"></i></p>
       </div>
     </div>
 
     <!-- End your project here-->
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/switch.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
   </body>
 </html>
